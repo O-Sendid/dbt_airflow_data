@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  dbt:
+    build: .
+    container_name: dbt_container
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+    environment:
+      - DBT_PROFILES_DIR=/app/dbt_project
+    command: ["sleep", "infinity"]
+
+  postgres:
+    image: postgres:13
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: dbt_user
+      POSTGRES_PASSWORD: dbt_password
+      POSTGRES_DB: dbt_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

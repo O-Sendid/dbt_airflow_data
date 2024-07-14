@@ -1,0 +1,26 @@
+name: 'dbt_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+# Chemins vers différents types de fichiers
+source-paths: ["models"]  # Chemin des modèles dbt
+analysis-paths: ["analysis"]  # Chemin des analyses
+test-paths: ["tests"]  # Chemin des tests
+data-paths: ["data"]  # Chemin des données d'entrée
+macro-paths: ["macros"]  # Chemin des macros
+snapshot-paths: ["snapshots"]  # Chemin des snapshots
+
+# Chemin de la sortie des résultats
+target-path: "target"
+# Fichiers/dossiers à nettoyer avant de lancer dbt run
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Configuration des modèles dbt
+models:
+  your_model_name:
+    +materialized: view  # Type de matérialisation des modèles (view, table, etc.)
+
