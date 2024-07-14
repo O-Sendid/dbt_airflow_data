@@ -1,0 +1,56 @@
+version: '3.9'
+services:
+  dbt:
+    build: .
+    container_name: dbt_container
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+    environment:
+      - DBT_PROFILES_DIR=/app/dbt_project
+      - DBT_PROJECT_DIR=/app/dbt_project
+    command: ["sleep", "infinity"]
+
+  postgres:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=dbt_password
+      - POSTGRES_USER=dbt_user
+      - POSTGRES_DB=dbt_database
+    container_name: "postgres"
+    healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+            timeout: 20s
+            retries: 10
+
+  create-db:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - POSTGRES_PASSWORD=dbt_password
+      - POSTGRES_USER=dbt_user
+      - POSTGRES_DB=dbt_database
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+    working_dir: /app
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=SuperSecret
+    ports:
+      - "80:80"
+    depends_on:
+      - postgres
+    container_name: "pgadmin"
+
+volumes:
+  postgres_data:
