@@ -2,7 +2,7 @@ name: 'dbt_project'
 version: '1.0.0'
 config-version: 2
 
-profile: 'default'
+profile: 'jaffle_shop'
 
 # Chemins vers différents types de fichiers
 source-paths: ["models"]  # Chemin des modèles dbt

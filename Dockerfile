@@ -13,5 +13,5 @@ RUN pip install --upgrade pip && \
 # Copy project
 COPY . /app
 
-# Default command
-CMD ["sleep", "infinity"]
+CMD python3 db/scripts/create_db_insert_data.py
+
