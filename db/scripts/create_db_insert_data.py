@@ -46,9 +46,9 @@ if __name__ == "__main__":
 
     #  Create file name to table name mapping
     files = {
-        "jaffle_shop_customers.csv": "jaffle_shop.customers",
-        "jaffle_shop_orders.csv": "jaffle_shop.orders",
-        "stripe_payments.csv": "stripe.payment",
+        "jaffle_shop_customers.csv": "raw.customers",
+        "jaffle_shop_orders.csv": "raw.orders",
+        "stripe_payments.csv": "raw.payment",
     }
 
     for file in files.keys():

@@ -23,11 +23,11 @@ psql -h postgres -U dbt_user -d postgres
 \c dbt_database
 \dt
 
-select * from jaffle_shop.customers;
+select * from raw.customers;
 
-select * from jaffle_shop.orders;
+select * from raw.orders;
 
-select * from stripe.payment;
+select * from raw.payment;
 
 
 

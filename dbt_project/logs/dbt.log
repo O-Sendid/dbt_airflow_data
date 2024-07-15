@@ -283,3 +283,1454 @@ The `data-paths` config has been renamed to `seed-paths`. Please update your
 23:27:03.920859 [debug] [MainThread]: On debug: Close
 23:27:03.923212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94e2daef40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94e2d88af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94e2d88f40>]}
 23:27:04.318048 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 20:36:50.604741 | 96fef9d9-7e98-4f51-bda3-cddfc55ed03f ==============================
+20:36:50.604741 [info ] [MainThread]: Running with dbt=1.0.0
+20:36:50.606408 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+20:36:50.609583 [debug] [MainThread]: Tracking: tracking
+20:36:50.617292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546d17b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546d17d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546d17c40>]}
+20:36:50.893792 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+20:36:50.895532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '96fef9d9-7e98-4f51-bda3-cddfc55ed03f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f65461d8eb0>]}
+20:36:50.897819 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+20:36:50.899355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '96fef9d9-7e98-4f51-bda3-cddfc55ed03f', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f65461ce850>]}
+20:36:50.939843 [debug] [MainThread]: Executing "git --help"
+20:36:50.967966 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+20:36:50.970233 [debug] [MainThread]: STDERR: "b''"
+20:36:50.981529 [debug] [MainThread]: Acquiring new postgres connection "debug"
+20:36:50.988587 [debug] [MainThread]: Using postgres connection "debug"
+20:36:50.990811 [debug] [MainThread]: On debug: select 1 as id
+20:36:50.992249 [debug] [MainThread]: Opening a new connection, currently in state init
+20:36:51.001058 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+20:36:51.005910 [debug] [MainThread]: On debug: Close
+20:36:51.008864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546188100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546188a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6546188250>]}
+20:36:51.432986 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 21:13:20.824149 | ffd596b3-f9ea-4bf2-abb7-76bc14a7c2da ==============================
+21:13:20.824149 [info ] [MainThread]: Running with dbt=1.0.0
+21:13:20.825644 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+21:13:20.831704 [debug] [MainThread]: Tracking: tracking
+21:13:20.839039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc4f910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc4fd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc4fe20>]}
+21:13:21.034619 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:13:21.036947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ffd596b3-f9ea-4bf2-abb7-76bc14a7c2da', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc4f820>]}
+21:13:21.039655 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:13:21.041900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ffd596b3-f9ea-4bf2-abb7-76bc14a7c2da', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc4f9d0>]}
+21:13:21.075215 [debug] [MainThread]: Executing "git --help"
+21:13:21.130170 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+21:13:21.131973 [debug] [MainThread]: STDERR: "b''"
+21:13:21.140639 [debug] [MainThread]: Acquiring new postgres connection "debug"
+21:13:21.148472 [debug] [MainThread]: Using postgres connection "debug"
+21:13:21.151352 [debug] [MainThread]: On debug: select 1 as id
+21:13:21.152874 [debug] [MainThread]: Opening a new connection, currently in state init
+21:13:21.165836 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+21:13:21.172938 [debug] [MainThread]: On debug: Close
+21:13:21.185513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fcc75760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fccafe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19fccaffa0>]}
+21:13:21.655504 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 21:13:48.598791 | c9af5174-db24-4153-afe6-41d45cb986f9 ==============================
+21:13:48.598791 [info ] [MainThread]: Running with dbt=1.0.0
+21:13:48.600518 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+21:13:48.603254 [debug] [MainThread]: Tracking: tracking
+21:13:48.610910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96d2cf850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96d2cfc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96d2cf6d0>]}
+21:13:48.681174 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+21:13:48.682653 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+21:13:48.684498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c9af5174-db24-4153-afe6-41d45cb986f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96d2f5970>]}
+21:13:48.778228 [debug] [MainThread]: Parsing macros/catalog.sql
+21:13:48.789848 [debug] [MainThread]: Parsing macros/adapters.sql
+21:13:48.839701 [debug] [MainThread]: Parsing macros/relations.sql
+21:13:48.843620 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+21:13:48.847623 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+21:13:48.867134 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+21:13:48.886745 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+21:13:48.892755 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+21:13:48.899484 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+21:13:48.916506 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+21:13:48.921563 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+21:13:48.930963 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+21:13:48.948546 [debug] [MainThread]: Parsing macros/etc/statement.sql
+21:13:48.958073 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+21:13:48.963809 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+21:13:48.967305 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+21:13:48.971085 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+21:13:48.976076 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+21:13:48.984058 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+21:13:48.998976 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+21:13:49.005103 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+21:13:49.012488 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+21:13:49.015758 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+21:13:49.030406 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+21:13:49.036747 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+21:13:49.065959 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+21:13:49.071673 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+21:13:49.124327 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+21:13:49.148356 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+21:13:49.158313 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+21:13:49.195343 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+21:13:49.209425 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+21:13:49.213893 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+21:13:49.218077 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+21:13:49.227843 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+21:13:49.252532 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+21:13:49.276675 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+21:13:49.310685 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+21:13:49.314892 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+21:13:49.317918 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+21:13:49.321564 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+21:13:49.323674 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+21:13:49.326106 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+21:13:49.695522 [debug] [MainThread]: 1699: static parser successfully parsed customers_orders.sql
+21:13:49.747766 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.your_model_name
+
+21:13:49.760233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9af5174-db24-4153-afe6-41d45cb986f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c99b0d0>]}
+21:13:49.784857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9af5174-db24-4153-afe6-41d45cb986f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c9920d0>]}
+21:13:49.786942 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+21:13:49.801278 [info ] [MainThread]: 
+21:13:49.810326 [debug] [MainThread]: Acquiring new postgres connection "master"
+21:13:49.813189 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database"
+21:13:49.837847 [debug] [ThreadPool]: Using postgres connection "list_dbt_database"
+21:13:49.839281 [debug] [ThreadPool]: On list_dbt_database: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database"} */
+
+    select distinct nspname from pg_namespace
+  
+21:13:49.840686 [debug] [ThreadPool]: Opening a new connection, currently in state init
+21:13:49.848429 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+21:13:49.851451 [debug] [ThreadPool]: On list_dbt_database: Close
+21:13:49.854374 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database_public"
+21:13:49.866570 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_public"
+21:13:49.867891 [debug] [ThreadPool]: On list_dbt_database_public: BEGIN
+21:13:49.869145 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+21:13:49.875082 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+21:13:49.876715 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_public"
+21:13:49.878360 [debug] [ThreadPool]: On list_dbt_database_public: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database_public"} */
+select
+      'dbt_database' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt_database' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+21:13:49.886636 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.01 seconds
+21:13:49.890045 [debug] [ThreadPool]: On list_dbt_database_public: ROLLBACK
+21:13:49.892068 [debug] [ThreadPool]: On list_dbt_database_public: Close
+21:13:49.898881 [debug] [MainThread]: Using postgres connection "master"
+21:13:49.900119 [debug] [MainThread]: On master: BEGIN
+21:13:49.901148 [debug] [MainThread]: Opening a new connection, currently in state init
+21:13:49.906259 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+21:13:49.907469 [debug] [MainThread]: Using postgres connection "master"
+21:13:49.908464 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+21:13:49.922516 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+21:13:49.924847 [debug] [MainThread]: On master: ROLLBACK
+21:13:49.926154 [debug] [MainThread]: Using postgres connection "master"
+21:13:49.927311 [debug] [MainThread]: On master: BEGIN
+21:13:49.928764 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+21:13:49.929879 [debug] [MainThread]: On master: COMMIT
+21:13:49.930964 [debug] [MainThread]: Using postgres connection "master"
+21:13:49.931900 [debug] [MainThread]: On master: COMMIT
+21:13:49.933121 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+21:13:49.934165 [debug] [MainThread]: On master: Close
+21:13:49.935465 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+21:13:49.936823 [info ] [MainThread]: 
+21:13:49.962358 [debug] [Thread-1  ]: Began running node model.dbt_project.customers_orders
+21:13:49.963610 [info ] [Thread-1  ]: 1 of 1 START view model public.customers_orders................................. [RUN]
+21:13:49.966224 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_project.customers_orders"
+21:13:49.970119 [debug] [Thread-1  ]: Began compiling node model.dbt_project.customers_orders
+21:13:49.972069 [debug] [Thread-1  ]: Compiling model.dbt_project.customers_orders
+21:13:49.976545 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.customers_orders"
+21:13:49.998957 [debug] [Thread-1  ]: finished collecting timing info
+21:13:50.000303 [debug] [Thread-1  ]: Began executing node model.dbt_project.customers_orders
+21:13:50.055909 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_project.customers_orders"
+21:13:50.068908 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:13:50.070097 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: BEGIN
+21:13:50.071636 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+21:13:50.076569 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+21:13:50.077917 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:13:50.079103 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+
+  create view "dbt_database"."public"."customers_orders__dbt_tmp" as (
+    with view_orders_cust as  (
+
+select ord.id,cus.first_name,ord.status
+from jaffle_shop.orders as ord
+left join jaffle_shop.customers as cus on ord.user_id = cus.id
+
+)
+select * from view_orders_cust
+  );
+21:13:50.084440 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+21:13:50.093571 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:13:50.094644 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+alter table "dbt_database"."public"."customers_orders__dbt_tmp" rename to "customers_orders"
+21:13:50.097082 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+21:13:50.107599 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+21:13:50.108643 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:13:50.109537 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+21:13:50.111600 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+21:13:50.118716 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:13:50.119765 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+drop view if exists "dbt_database"."public"."customers_orders__dbt_backup" cascade
+21:13:50.121022 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+21:13:50.123234 [debug] [Thread-1  ]: finished collecting timing info
+21:13:50.124241 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: Close
+21:13:50.125578 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9af5174-db24-4153-afe6-41d45cb986f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c987ee0>]}
+21:13:50.127045 [info ] [Thread-1  ]: 1 of 1 OK created view model public.customers_orders............................ [[32mCREATE VIEW[0m in 0.16s]
+21:13:50.128371 [debug] [Thread-1  ]: Finished running node model.dbt_project.customers_orders
+21:13:50.131733 [debug] [MainThread]: Acquiring new postgres connection "master"
+21:13:50.133230 [debug] [MainThread]: Using postgres connection "master"
+21:13:50.134283 [debug] [MainThread]: On master: BEGIN
+21:13:50.135262 [debug] [MainThread]: Opening a new connection, currently in state closed
+21:13:50.139694 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+21:13:50.140821 [debug] [MainThread]: On master: COMMIT
+21:13:50.141852 [debug] [MainThread]: Using postgres connection "master"
+21:13:50.142753 [debug] [MainThread]: On master: COMMIT
+21:13:50.143835 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+21:13:50.144775 [debug] [MainThread]: On master: Close
+21:13:50.146468 [info ] [MainThread]: 
+21:13:50.148172 [info ] [MainThread]: Finished running 1 view model in 0.34s.
+21:13:50.150416 [debug] [MainThread]: Connection 'master' was properly closed.
+21:13:50.152351 [debug] [MainThread]: Connection 'model.dbt_project.customers_orders' was properly closed.
+21:13:50.173691 [info ] [MainThread]: 
+21:13:50.175381 [info ] [MainThread]: [32mCompleted successfully[0m
+21:13:50.178200 [info ] [MainThread]: 
+21:13:50.180816 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+21:13:50.184532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c967040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c9fa520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb96c94d850>]}
+
+
+============================== 2024-07-15 21:49:36.625843 | 1e5f47d7-0a31-4a93-b627-ea90e603d306 ==============================
+21:49:36.625843 [info ] [MainThread]: Running with dbt=1.0.0
+21:49:36.629918 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+21:49:36.637717 [debug] [MainThread]: Tracking: tracking
+21:49:36.657180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622ca8f910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622ca8fd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622ca8fe20>]}
+21:49:36.889548 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:49:36.891910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1e5f47d7-0a31-4a93-b627-ea90e603d306', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622ca8f820>]}
+21:49:36.895132 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:49:36.897361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1e5f47d7-0a31-4a93-b627-ea90e603d306', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622ca8f9d0>]}
+21:49:36.953298 [debug] [MainThread]: Executing "git --help"
+21:49:36.991402 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+21:49:36.993423 [debug] [MainThread]: STDERR: "b''"
+21:49:37.007155 [debug] [MainThread]: Acquiring new postgres connection "debug"
+21:49:37.009959 [debug] [MainThread]: Using postgres connection "debug"
+21:49:37.011776 [debug] [MainThread]: On debug: select 1 as id
+21:49:37.013461 [debug] [MainThread]: Opening a new connection, currently in state init
+21:49:37.029605 [debug] [MainThread]: SQL status: SELECT 1 in 0.02 seconds
+21:49:37.035361 [debug] [MainThread]: On debug: Close
+21:49:37.037966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622cab50a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622caefe50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f622caefeb0>]}
+21:49:37.533055 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 21:53:31.189841 | a72ea05f-c5b8-4432-a7b9-06ae55ab1379 ==============================
+21:53:31.189841 [info ] [MainThread]: Running with dbt=1.0.0
+21:53:31.193285 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+21:53:31.197852 [debug] [MainThread]: Tracking: tracking
+21:53:31.211945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a997bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a997d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a997c70>]}
+21:53:31.477428 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:53:31.479113 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a72ea05f-c5b8-4432-a7b9-06ae55ab1379', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a179ee0>]}
+21:53:31.481922 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:53:31.483646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a72ea05f-c5b8-4432-a7b9-06ae55ab1379', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a16f0d0>]}
+21:53:31.530706 [debug] [MainThread]: Executing "git --help"
+21:53:31.541655 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+21:53:31.543715 [debug] [MainThread]: STDERR: "b''"
+21:53:31.559874 [debug] [MainThread]: Acquiring new postgres connection "debug"
+21:53:31.562744 [debug] [MainThread]: Using postgres connection "debug"
+21:53:31.565707 [debug] [MainThread]: On debug: select 1 as id
+21:53:31.567380 [debug] [MainThread]: Opening a new connection, currently in state init
+21:53:31.578419 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+21:53:31.584206 [debug] [MainThread]: On debug: Close
+21:53:31.586641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a129100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a129a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd26a129250>]}
+21:53:32.062531 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 21:56:13.340675 | 9c48a1a0-c90e-41a2-8b8a-bf94b489744c ==============================
+21:56:13.340675 [info ] [MainThread]: Running with dbt=1.0.0
+21:56:13.342628 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+21:56:13.344969 [debug] [MainThread]: Tracking: tracking
+21:56:13.352023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78e797be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78e797d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78e797ca0>]}
+21:56:13.535739 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:56:13.537641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9c48a1a0-c90e-41a2-8b8a-bf94b489744c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78df8b3a0>]}
+21:56:13.540491 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+21:56:13.542816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '9c48a1a0-c90e-41a2-8b8a-bf94b489744c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78df8b130>]}
+21:56:13.588028 [debug] [MainThread]: Executing "git --help"
+21:56:13.596574 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+21:56:13.598542 [debug] [MainThread]: STDERR: "b''"
+21:56:13.612140 [debug] [MainThread]: Acquiring new postgres connection "debug"
+21:56:13.615805 [debug] [MainThread]: Using postgres connection "debug"
+21:56:13.617388 [debug] [MainThread]: On debug: select 1 as id
+21:56:13.618936 [debug] [MainThread]: Opening a new connection, currently in state init
+21:56:13.629261 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+21:56:13.633226 [debug] [MainThread]: On debug: Close
+21:56:13.639134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78df47100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78df47a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc78df47250>]}
+21:56:14.093773 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 21:59:43.766514 | b53b1c76-5eaf-46b8-bbec-6969a70e5ad4 ==============================
+21:59:43.766514 [info ] [MainThread]: Running with dbt=1.0.0
+21:59:43.769034 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+21:59:43.771868 [debug] [MainThread]: Tracking: tracking
+21:59:43.778621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d417cfe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d417cf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d417cf640>]}
+21:59:43.840476 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+21:59:43.842433 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+21:59:43.844757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b53b1c76-5eaf-46b8-bbec-6969a70e5ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d41b4efd0>]}
+21:59:43.954237 [debug] [MainThread]: Parsing macros/catalog.sql
+21:59:43.965547 [debug] [MainThread]: Parsing macros/adapters.sql
+21:59:44.023447 [debug] [MainThread]: Parsing macros/relations.sql
+21:59:44.028502 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+21:59:44.034350 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+21:59:44.065443 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+21:59:44.097201 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+21:59:44.106097 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+21:59:44.116085 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+21:59:44.140249 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+21:59:44.147824 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+21:59:44.161841 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+21:59:44.191187 [debug] [MainThread]: Parsing macros/etc/statement.sql
+21:59:44.215809 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+21:59:44.230467 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+21:59:44.240573 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+21:59:44.250471 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+21:59:44.263988 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+21:59:44.279861 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+21:59:44.300488 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+21:59:44.308240 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+21:59:44.317101 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+21:59:44.322588 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+21:59:44.351443 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+21:59:44.367205 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+21:59:44.420487 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+21:59:44.425209 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+21:59:44.463565 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+21:59:44.486119 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+21:59:44.497676 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+21:59:44.539728 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+21:59:44.557950 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+21:59:44.564272 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+21:59:44.571302 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+21:59:44.586721 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+21:59:44.627454 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+21:59:44.663894 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+21:59:44.730903 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+21:59:44.738726 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+21:59:44.743461 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+21:59:44.750117 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+21:59:44.753877 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+21:59:44.758111 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+21:59:45.211856 [debug] [MainThread]: 1699: static parser successfully parsed customers_orders.sql
+21:59:45.284081 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.trusted
+
+21:59:45.310411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b53b1c76-5eaf-46b8-bbec-6969a70e5ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40b460d0>]}
+21:59:45.341163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b53b1c76-5eaf-46b8-bbec-6969a70e5ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40f8fb50>]}
+21:59:45.343111 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+21:59:45.347996 [info ] [MainThread]: 
+21:59:45.350707 [debug] [MainThread]: Acquiring new postgres connection "master"
+21:59:45.355478 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database"
+21:59:45.378354 [debug] [ThreadPool]: Using postgres connection "list_dbt_database"
+21:59:45.379818 [debug] [ThreadPool]: On list_dbt_database: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database"} */
+
+    select distinct nspname from pg_namespace
+  
+21:59:45.381301 [debug] [ThreadPool]: Opening a new connection, currently in state init
+21:59:45.388326 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.01 seconds
+21:59:45.393701 [debug] [ThreadPool]: On list_dbt_database: Close
+21:59:45.396222 [debug] [ThreadPool]: Acquiring new postgres connection "create_dbt_database_trusted"
+21:59:45.398156 [debug] [ThreadPool]: Acquiring new postgres connection "create_dbt_database_trusted"
+21:59:45.399807 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='dbt_database', schema='trusted', identifier=None)"
+21:59:45.410637 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_trusted"
+21:59:45.413786 [debug] [ThreadPool]: On create_dbt_database_trusted: BEGIN
+21:59:45.415253 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+21:59:45.420939 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+21:59:45.422312 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_trusted"
+21:59:45.423568 [debug] [ThreadPool]: On create_dbt_database_trusted: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "create_dbt_database_trusted"} */
+create schema if not exists "trusted"
+21:59:45.425586 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+21:59:45.428227 [debug] [ThreadPool]: On create_dbt_database_trusted: COMMIT
+21:59:45.429540 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_trusted"
+21:59:45.431142 [debug] [ThreadPool]: On create_dbt_database_trusted: COMMIT
+21:59:45.434156 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+21:59:45.435806 [debug] [ThreadPool]: On create_dbt_database_trusted: Close
+21:59:45.438788 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database_trusted"
+21:59:45.450362 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_trusted"
+21:59:45.451952 [debug] [ThreadPool]: On list_dbt_database_trusted: BEGIN
+21:59:45.454070 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+21:59:45.464705 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+21:59:45.467673 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_trusted"
+21:59:45.470078 [debug] [ThreadPool]: On list_dbt_database_trusted: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database_trusted"} */
+select
+      'dbt_database' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'trusted'
+    union all
+    select
+      'dbt_database' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'trusted'
+  
+21:59:45.479268 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.01 seconds
+21:59:45.488799 [debug] [ThreadPool]: On list_dbt_database_trusted: ROLLBACK
+21:59:45.492077 [debug] [ThreadPool]: On list_dbt_database_trusted: Close
+21:59:45.510724 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.513024 [debug] [MainThread]: On master: BEGIN
+21:59:45.516034 [debug] [MainThread]: Opening a new connection, currently in state init
+21:59:45.526853 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+21:59:45.529369 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.532105 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+21:59:45.546624 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+21:59:45.552712 [debug] [MainThread]: On master: ROLLBACK
+21:59:45.555589 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.557897 [debug] [MainThread]: On master: BEGIN
+21:59:45.561672 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+21:59:45.563697 [debug] [MainThread]: On master: COMMIT
+21:59:45.565973 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.568486 [debug] [MainThread]: On master: COMMIT
+21:59:45.571047 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+21:59:45.573208 [debug] [MainThread]: On master: Close
+21:59:45.576577 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+21:59:45.579474 [info ] [MainThread]: 
+21:59:45.651491 [debug] [Thread-1  ]: Began running node model.dbt_project.customers_orders
+21:59:45.654138 [info ] [Thread-1  ]: 1 of 1 START view model trusted.customers_orders................................ [RUN]
+21:59:45.657805 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_project.customers_orders"
+21:59:45.667683 [debug] [Thread-1  ]: Began compiling node model.dbt_project.customers_orders
+21:59:45.670742 [debug] [Thread-1  ]: Compiling model.dbt_project.customers_orders
+21:59:45.681290 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.customers_orders"
+21:59:45.705981 [debug] [Thread-1  ]: finished collecting timing info
+21:59:45.710513 [debug] [Thread-1  ]: Began executing node model.dbt_project.customers_orders
+21:59:45.811354 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_project.customers_orders"
+21:59:45.833901 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:59:45.836721 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: BEGIN
+21:59:45.839410 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+21:59:45.852180 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+21:59:45.855202 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+21:59:45.857627 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+
+  create view "dbt_database"."trusted"."customers_orders__dbt_tmp" as (
+    with view_orders_cust as  (
+
+select ord.id,cus.first_name,ord.status
+from jaffle_shop.orders as ord
+left join jaffle_shop.customers as cus on ord.user_id = cus.id
+
+)
+select * from view_orders_cust
+  );
+21:59:45.861808 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "jaffle_shop.orders" does not exist
+LINE 7: from jaffle_shop.orders as ord
+             ^
+
+21:59:45.864304 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: ROLLBACK
+21:59:45.867480 [debug] [Thread-1  ]: finished collecting timing info
+21:59:45.871010 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: Close
+21:59:45.874377 [debug] [Thread-1  ]: Database Error in model customers_orders (models/customers_orders.sql)
+  relation "jaffle_shop.orders" does not exist
+  LINE 7: from jaffle_shop.orders as ord
+               ^
+  compiled SQL at target/run/dbt_project/models/customers_orders.sql
+21:59:45.877763 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b53b1c76-5eaf-46b8-bbec-6969a70e5ad4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40b3c6a0>]}
+21:59:45.881295 [error] [Thread-1  ]: 1 of 1 ERROR creating view model trusted.customers_orders....................... [[31mERROR[0m in 0.22s]
+21:59:45.885163 [debug] [Thread-1  ]: Finished running node model.dbt_project.customers_orders
+21:59:45.893107 [debug] [MainThread]: Acquiring new postgres connection "master"
+21:59:45.895642 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.898117 [debug] [MainThread]: On master: BEGIN
+21:59:45.900783 [debug] [MainThread]: Opening a new connection, currently in state closed
+21:59:45.912591 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+21:59:45.918708 [debug] [MainThread]: On master: COMMIT
+21:59:45.922019 [debug] [MainThread]: Using postgres connection "master"
+21:59:45.924553 [debug] [MainThread]: On master: COMMIT
+21:59:45.927207 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+21:59:45.929667 [debug] [MainThread]: On master: Close
+21:59:45.934254 [info ] [MainThread]: 
+21:59:45.938461 [info ] [MainThread]: Finished running 1 view model in 0.58s.
+21:59:45.944451 [debug] [MainThread]: Connection 'master' was properly closed.
+21:59:45.949769 [debug] [MainThread]: Connection 'model.dbt_project.customers_orders' was properly closed.
+21:59:45.999390 [info ] [MainThread]: 
+21:59:46.005748 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+21:59:46.010564 [info ] [MainThread]: 
+21:59:46.017394 [error] [MainThread]: [33mDatabase Error in model customers_orders (models/customers_orders.sql)[0m
+21:59:46.024772 [error] [MainThread]:   relation "jaffle_shop.orders" does not exist
+21:59:46.029284 [error] [MainThread]:   LINE 7: from jaffle_shop.orders as ord
+21:59:46.033917 [error] [MainThread]:                ^
+21:59:46.046473 [error] [MainThread]:   compiled SQL at target/run/dbt_project/models/customers_orders.sql
+21:59:46.052269 [info ] [MainThread]: 
+21:59:46.060644 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+21:59:46.064871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40b27df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40b27100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6d40b3ce80>]}
+
+
+============================== 2024-07-15 22:01:44.207856 | f309908e-e3d9-419a-b283-e8a146421842 ==============================
+22:01:44.207856 [info ] [MainThread]: Running with dbt=1.0.0
+22:01:44.210905 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+22:01:44.215978 [debug] [MainThread]: Tracking: tracking
+22:01:44.230042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1c1cfdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1c4dddc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1c4ddee0>]}
+22:01:44.429416 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:01:44.431184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f309908e-e3d9-419a-b283-e8a146421842', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1b9755e0>]}
+22:01:44.434028 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:01:44.435857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f309908e-e3d9-419a-b283-e8a146421842', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1b975160>]}
+22:01:44.471887 [debug] [MainThread]: Executing "git --help"
+22:01:44.479922 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+22:01:44.482447 [debug] [MainThread]: STDERR: "b''"
+22:01:44.491840 [debug] [MainThread]: Acquiring new postgres connection "debug"
+22:01:44.494304 [debug] [MainThread]: Using postgres connection "debug"
+22:01:44.495914 [debug] [MainThread]: On debug: select 1 as id
+22:01:44.497584 [debug] [MainThread]: Opening a new connection, currently in state init
+22:01:44.509148 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+22:01:44.512483 [debug] [MainThread]: On debug: Close
+22:01:44.514443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1c1cf4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1b975370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1b975f10>]}
+22:01:44.959289 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 22:01:57.424983 | af6f3618-95b1-407e-b28f-a49bc92f014d ==============================
+22:01:57.424983 [info ] [MainThread]: Running with dbt=1.0.0
+22:01:57.427051 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+22:01:57.430041 [debug] [MainThread]: Tracking: tracking
+22:01:57.439107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a324fb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a324f7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a324f040>]}
+22:01:57.602926 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+22:01:57.604525 [debug] [MainThread]: Partial parsing: updated file: dbt_project://models/customers_orders.sql
+22:01:57.628779 [debug] [MainThread]: 1699: static parser successfully parsed customers_orders.sql
+22:01:57.658667 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.trusted
+
+22:01:57.672664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af6f3618-95b1-407e-b28f-a49bc92f014d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a25d00d0>]}
+22:01:57.697504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af6f3618-95b1-407e-b28f-a49bc92f014d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a327f4f0>]}
+22:01:57.699795 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+22:01:57.704693 [info ] [MainThread]: 
+22:01:57.709621 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:01:57.714501 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database"
+22:01:57.735826 [debug] [ThreadPool]: Using postgres connection "list_dbt_database"
+22:01:57.737442 [debug] [ThreadPool]: On list_dbt_database: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database"} */
+
+    select distinct nspname from pg_namespace
+  
+22:01:57.738575 [debug] [ThreadPool]: Opening a new connection, currently in state init
+22:01:57.745968 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+22:01:57.750514 [debug] [ThreadPool]: On list_dbt_database: Close
+22:01:57.753601 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database_trusted"
+22:01:57.764205 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_trusted"
+22:01:57.767582 [debug] [ThreadPool]: On list_dbt_database_trusted: BEGIN
+22:01:57.769476 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:01:57.774538 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+22:01:57.775878 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_trusted"
+22:01:57.776962 [debug] [ThreadPool]: On list_dbt_database_trusted: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dbt_database_trusted"} */
+select
+      'dbt_database' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'trusted'
+    union all
+    select
+      'dbt_database' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'trusted'
+  
+22:01:57.780672 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+22:01:57.783509 [debug] [ThreadPool]: On list_dbt_database_trusted: ROLLBACK
+22:01:57.784975 [debug] [ThreadPool]: On list_dbt_database_trusted: Close
+22:01:57.793972 [debug] [MainThread]: Using postgres connection "master"
+22:01:57.795236 [debug] [MainThread]: On master: BEGIN
+22:01:57.796228 [debug] [MainThread]: Opening a new connection, currently in state init
+22:01:57.801253 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+22:01:57.802514 [debug] [MainThread]: Using postgres connection "master"
+22:01:57.803712 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+22:01:57.810670 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+22:01:57.813402 [debug] [MainThread]: On master: ROLLBACK
+22:01:57.814820 [debug] [MainThread]: Using postgres connection "master"
+22:01:57.816189 [debug] [MainThread]: On master: BEGIN
+22:01:57.817691 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+22:01:57.819004 [debug] [MainThread]: On master: COMMIT
+22:01:57.820179 [debug] [MainThread]: Using postgres connection "master"
+22:01:57.821340 [debug] [MainThread]: On master: COMMIT
+22:01:57.822724 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:01:57.823862 [debug] [MainThread]: On master: Close
+22:01:57.825311 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+22:01:57.826892 [info ] [MainThread]: 
+22:01:57.835434 [debug] [Thread-1  ]: Began running node model.dbt_project.customers_orders
+22:01:57.837088 [info ] [Thread-1  ]: 1 of 1 START view model trusted.customers_orders................................ [RUN]
+22:01:57.839635 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_project.customers_orders"
+22:01:57.841154 [debug] [Thread-1  ]: Began compiling node model.dbt_project.customers_orders
+22:01:57.842392 [debug] [Thread-1  ]: Compiling model.dbt_project.customers_orders
+22:01:57.845513 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.customers_orders"
+22:01:57.856363 [debug] [Thread-1  ]: finished collecting timing info
+22:01:57.857914 [debug] [Thread-1  ]: Began executing node model.dbt_project.customers_orders
+22:01:57.905313 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_project.customers_orders"
+22:01:57.914728 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:01:57.916361 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: BEGIN
+22:01:57.918014 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+22:01:57.923852 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+22:01:57.925352 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:01:57.926581 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+
+  create view "dbt_database"."trusted"."customers_orders__dbt_tmp" as (
+    with view_orders_cust as  (
+
+select ord.id,cus.first_name,ord.status
+from raw.orders as ord
+left join raw.customers as cus on ord.user_id = cus.id
+
+)
+select * from view_orders_cust
+  );
+22:01:57.929796 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+22:01:57.941189 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:01:57.942746 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+alter table "dbt_database"."trusted"."customers_orders__dbt_tmp" rename to "customers_orders"
+22:01:57.945231 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+22:01:57.957591 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:01:57.959274 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:01:57.960699 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:01:57.963899 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+22:01:58.005602 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:01:58.007298 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+drop view if exists "dbt_database"."trusted"."customers_orders__dbt_backup" cascade
+22:01:58.008999 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+22:01:58.012267 [debug] [Thread-1  ]: finished collecting timing info
+22:01:58.013987 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: Close
+22:01:58.016262 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'af6f3618-95b1-407e-b28f-a49bc92f014d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a2546fa0>]}
+22:01:58.018026 [info ] [Thread-1  ]: 1 of 1 OK created view model trusted.customers_orders........................... [[32mCREATE VIEW[0m in 0.18s]
+22:01:58.019829 [debug] [Thread-1  ]: Finished running node model.dbt_project.customers_orders
+22:01:58.024135 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:01:58.025858 [debug] [MainThread]: Using postgres connection "master"
+22:01:58.027662 [debug] [MainThread]: On master: BEGIN
+22:01:58.029003 [debug] [MainThread]: Opening a new connection, currently in state closed
+22:01:58.035208 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+22:01:58.036926 [debug] [MainThread]: On master: COMMIT
+22:01:58.038962 [debug] [MainThread]: Using postgres connection "master"
+22:01:58.040638 [debug] [MainThread]: On master: COMMIT
+22:01:58.042726 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:01:58.044889 [debug] [MainThread]: On master: Close
+22:01:58.046929 [info ] [MainThread]: 
+22:01:58.048672 [info ] [MainThread]: Finished running 1 view model in 0.34s.
+22:01:58.051153 [debug] [MainThread]: Connection 'master' was properly closed.
+22:01:58.053861 [debug] [MainThread]: Connection 'model.dbt_project.customers_orders' was properly closed.
+22:01:58.077252 [info ] [MainThread]: 
+22:01:58.081328 [info ] [MainThread]: [32mCompleted successfully[0m
+22:01:58.087559 [info ] [MainThread]: 
+22:01:58.091995 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+22:01:58.095004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a3c24100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a3c24be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83a2591790>]}
+
+
+============================== 2024-07-15 22:18:19.353417 | 4d5f0625-e7ac-421e-8d97-a0a273812618 ==============================
+22:18:19.353417 [info ] [MainThread]: Running with dbt=1.0.0
+22:18:19.355517 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+22:18:19.358602 [debug] [MainThread]: Tracking: tracking
+22:18:19.366177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259bcfd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe25d0913d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259ee2df0>]}
+22:18:19.435670 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:18:19.437773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4d5f0625-e7ac-421e-8d97-a0a273812618', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259b4e730>]}
+22:18:19.440918 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:18:19.442709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '4d5f0625-e7ac-421e-8d97-a0a273812618', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259b4e0a0>]}
+22:18:19.481387 [debug] [MainThread]: Executing "git --help"
+22:18:19.489531 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+22:18:19.491898 [debug] [MainThread]: STDERR: "b''"
+22:18:19.493933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259bf5f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259b6aa60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe259b6ab80>]}
+
+
+============================== 2024-07-15 22:20:04.591184 | 257a0066-6f99-4579-8fa8-4affe950abd0 ==============================
+22:20:04.591184 [info ] [MainThread]: Running with dbt=1.0.0
+22:20:04.594481 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+22:20:04.598745 [debug] [MainThread]: Tracking: tracking
+22:20:04.612348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5f58fdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5f5efdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5f5efee0>]}
+22:20:04.930861 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:20:04.933020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '257a0066-6f99-4579-8fa8-4affe950abd0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5f5efac0>]}
+22:20:04.935290 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:20:04.937337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '257a0066-6f99-4579-8fa8-4affe950abd0', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5f5efdc0>]}
+22:20:04.979389 [debug] [MainThread]: Executing "git --help"
+22:20:04.987144 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+22:20:04.989542 [debug] [MainThread]: STDERR: "b''"
+22:20:05.002756 [debug] [MainThread]: Acquiring new postgres connection "debug"
+22:20:05.005586 [debug] [MainThread]: Using postgres connection "debug"
+22:20:05.007053 [debug] [MainThread]: On debug: select 1 as id
+22:20:05.008608 [debug] [MainThread]: Opening a new connection, currently in state init
+22:20:05.019029 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+22:20:05.023259 [debug] [MainThread]: On debug: Close
+22:20:05.025185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5ed2a4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5ed2abb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab5ed2ac70>]}
+22:20:05.457878 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 22:22:40.322343 | 76a0490c-2b9a-441f-9ec8-ba8caf8f980a ==============================
+22:22:40.322343 [info ] [MainThread]: Running with dbt=1.0.0
+22:22:40.323738 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+22:22:40.326286 [debug] [MainThread]: Tracking: tracking
+22:22:40.336311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a857bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a857d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a857c70>]}
+22:22:40.563497 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:22:40.565471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '76a0490c-2b9a-441f-9ec8-ba8caf8f980a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a2bbee0>]}
+22:22:40.568239 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:22:40.570235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '76a0490c-2b9a-441f-9ec8-ba8caf8f980a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a2b1820>]}
+22:22:40.614432 [debug] [MainThread]: Executing "git --help"
+22:22:40.624393 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+22:22:40.626111 [debug] [MainThread]: STDERR: "b''"
+22:22:40.640360 [debug] [MainThread]: Acquiring new postgres connection "debug"
+22:22:40.643050 [debug] [MainThread]: Using postgres connection "debug"
+22:22:40.644947 [debug] [MainThread]: On debug: select 1 as id
+22:22:40.646770 [debug] [MainThread]: Opening a new connection, currently in state init
+22:22:40.656428 [debug] [MainThread]: SQL status: SELECT 1 in 0.01 seconds
+22:22:40.660169 [debug] [MainThread]: On debug: Close
+22:22:40.663338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a269100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a269a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff0a269250>]}
+22:22:41.096678 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 22:24:32.075748 | f375bde0-6f7d-4f69-ae9f-ae3f4e737bc0 ==============================
+22:24:32.075748 [info ] [MainThread]: Running with dbt=1.0.0
+22:24:32.079118 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+22:24:32.083752 [debug] [MainThread]: Tracking: tracking
+22:24:32.096418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5631b4f070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5631b4ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5631b4f3a0>]}
+22:24:32.205039 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+22:24:32.209457 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+22:24:32.214524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f375bde0-6f7d-4f69-ae9f-ae3f4e737bc0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5631b36a60>]}
+22:24:32.326227 [debug] [MainThread]: Parsing macros/catalog.sql
+22:24:32.339948 [debug] [MainThread]: Parsing macros/adapters.sql
+22:24:32.466815 [debug] [MainThread]: Parsing macros/relations.sql
+22:24:32.476586 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+22:24:32.487280 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+22:24:32.521685 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+22:24:32.565106 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+22:24:32.572555 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+22:24:32.579621 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+22:24:32.597607 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+22:24:32.603434 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+22:24:32.614239 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+22:24:32.634907 [debug] [MainThread]: Parsing macros/etc/statement.sql
+22:24:32.645538 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+22:24:32.652524 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+22:24:32.657055 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+22:24:32.661823 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+22:24:32.668204 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+22:24:32.678159 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+22:24:32.696633 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+22:24:32.704121 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+22:24:32.710389 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+22:24:32.714457 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+22:24:32.732320 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+22:24:32.739587 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+22:24:32.768970 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+22:24:32.774236 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+22:24:32.818942 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+22:24:32.859109 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+22:24:32.877716 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+22:24:32.963313 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+22:24:32.995523 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+22:24:33.005792 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+22:24:33.016007 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+22:24:33.039921 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+22:24:33.092397 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+22:24:33.136574 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+22:24:33.218312 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+22:24:33.227944 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+22:24:33.234718 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+22:24:33.243058 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+22:24:33.247734 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+22:24:33.253619 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+22:24:33.957213 [debug] [MainThread]: 1699: static parser successfully parsed customers_orders.sql
+22:24:34.009197 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.commerce.customers_orders
+
+22:24:34.023502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f375bde0-6f7d-4f69-ae9f-ae3f4e737bc0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630e830d0>]}
+22:24:34.048574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f375bde0-6f7d-4f69-ae9f-ae3f4e737bc0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630ed3130>]}
+22:24:34.050321 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 165 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+22:24:34.054137 [info ] [MainThread]: 
+22:24:34.057655 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:24:34.062338 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database"
+22:24:34.083359 [debug] [ThreadPool]: Using postgres connection "list_dbt_database"
+22:24:34.084798 [debug] [ThreadPool]: On list_dbt_database: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "list_dbt_database"} */
+
+    select distinct nspname from pg_namespace
+  
+22:24:34.087538 [debug] [ThreadPool]: Opening a new connection, currently in state init
+22:24:34.094600 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.01 seconds
+22:24:34.098099 [debug] [ThreadPool]: On list_dbt_database: Close
+22:24:34.100127 [debug] [ThreadPool]: Acquiring new postgres connection "create_dbt_database_refined"
+22:24:34.101615 [debug] [ThreadPool]: Acquiring new postgres connection "create_dbt_database_refined"
+22:24:34.102798 [debug] [ThreadPool]: Creating schema "_ReferenceKey(database='dbt_database', schema='refined', identifier=None)"
+22:24:34.143168 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_refined"
+22:24:34.179033 [debug] [ThreadPool]: On create_dbt_database_refined: BEGIN
+22:24:34.196939 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:24:34.202922 [debug] [ThreadPool]: SQL status: BEGIN in 0.01 seconds
+22:24:34.204181 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_refined"
+22:24:34.205422 [debug] [ThreadPool]: On create_dbt_database_refined: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "create_dbt_database_refined"} */
+create schema if not exists "refined"
+22:24:34.207344 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+22:24:34.220953 [debug] [ThreadPool]: On create_dbt_database_refined: COMMIT
+22:24:34.223037 [debug] [ThreadPool]: Using postgres connection "create_dbt_database_refined"
+22:24:34.224989 [debug] [ThreadPool]: On create_dbt_database_refined: COMMIT
+22:24:34.229078 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+22:24:34.230322 [debug] [ThreadPool]: On create_dbt_database_refined: Close
+22:24:34.232995 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database_refined"
+22:24:34.243368 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_refined"
+22:24:34.244707 [debug] [ThreadPool]: On list_dbt_database_refined: BEGIN
+22:24:34.245751 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:24:34.250786 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+22:24:34.251956 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_refined"
+22:24:34.253024 [debug] [ThreadPool]: On list_dbt_database_refined: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "list_dbt_database_refined"} */
+select
+      'dbt_database' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'refined'
+    union all
+    select
+      'dbt_database' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'refined'
+  
+22:24:34.256892 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+22:24:34.259674 [debug] [ThreadPool]: On list_dbt_database_refined: ROLLBACK
+22:24:34.260993 [debug] [ThreadPool]: On list_dbt_database_refined: Close
+22:24:34.268725 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.269966 [debug] [MainThread]: On master: BEGIN
+22:24:34.271063 [debug] [MainThread]: Opening a new connection, currently in state init
+22:24:34.275839 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+22:24:34.277010 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.278089 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+22:24:34.284357 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+22:24:34.287848 [debug] [MainThread]: On master: ROLLBACK
+22:24:34.289639 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.290535 [debug] [MainThread]: On master: BEGIN
+22:24:34.291937 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+22:24:34.293044 [debug] [MainThread]: On master: COMMIT
+22:24:34.294119 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.295167 [debug] [MainThread]: On master: COMMIT
+22:24:34.296398 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:24:34.297479 [debug] [MainThread]: On master: Close
+22:24:34.299088 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+22:24:34.300473 [info ] [MainThread]: 
+22:24:34.330038 [debug] [Thread-1  ]: Began running node model.dbt_project.customers_orders
+22:24:34.331761 [info ] [Thread-1  ]: 1 of 1 START view model refined.customers_orders................................ [RUN]
+22:24:34.334349 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_project.customers_orders"
+22:24:34.337453 [debug] [Thread-1  ]: Began compiling node model.dbt_project.customers_orders
+22:24:34.339107 [debug] [Thread-1  ]: Compiling model.dbt_project.customers_orders
+22:24:34.344446 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.customers_orders"
+22:24:34.353599 [debug] [Thread-1  ]: finished collecting timing info
+22:24:34.355138 [debug] [Thread-1  ]: Began executing node model.dbt_project.customers_orders
+22:24:34.408685 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_project.customers_orders"
+22:24:34.415843 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:24:34.417142 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: BEGIN
+22:24:34.418357 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+22:24:34.424782 [debug] [Thread-1  ]: SQL status: BEGIN in 0.01 seconds
+22:24:34.425969 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:24:34.427080 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+
+  create view "dbt_database"."refined"."customers_orders__dbt_tmp" as (
+    with view_orders_cust as  (
+
+select ord.id,cus.first_name,ord.status
+from raw.orders as ord
+left join raw.customers as cus on ord.user_id = cus.id
+
+)
+select * from view_orders_cust
+  );
+22:24:34.430413 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+22:24:34.441917 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:24:34.443150 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+alter table "dbt_database"."refined"."customers_orders__dbt_tmp" rename to "customers_orders"
+22:24:34.444715 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+22:24:34.458720 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:24:34.460162 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:24:34.461520 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:24:34.463860 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+22:24:34.474532 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:24:34.475896 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+drop view if exists "dbt_database"."refined"."customers_orders__dbt_backup" cascade
+22:24:34.477612 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+22:24:34.480716 [debug] [Thread-1  ]: finished collecting timing info
+22:24:34.482107 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: Close
+22:24:34.484051 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f375bde0-6f7d-4f69-ae9f-ae3f4e737bc0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630bdf8e0>]}
+22:24:34.485903 [info ] [Thread-1  ]: 1 of 1 OK created view model refined.customers_orders........................... [[32mCREATE VIEW[0m in 0.15s]
+22:24:34.487790 [debug] [Thread-1  ]: Finished running node model.dbt_project.customers_orders
+22:24:34.493186 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:24:34.495036 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.496553 [debug] [MainThread]: On master: BEGIN
+22:24:34.498071 [debug] [MainThread]: Opening a new connection, currently in state closed
+22:24:34.504358 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+22:24:34.505720 [debug] [MainThread]: On master: COMMIT
+22:24:34.507854 [debug] [MainThread]: Using postgres connection "master"
+22:24:34.509343 [debug] [MainThread]: On master: COMMIT
+22:24:34.511393 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:24:34.513629 [debug] [MainThread]: On master: Close
+22:24:34.515710 [info ] [MainThread]: 
+22:24:34.517494 [info ] [MainThread]: Finished running 1 view model in 0.46s.
+22:24:34.520232 [debug] [MainThread]: Connection 'master' was properly closed.
+22:24:34.525000 [debug] [MainThread]: Connection 'model.dbt_project.customers_orders' was properly closed.
+22:24:34.554356 [info ] [MainThread]: 
+22:24:34.556701 [info ] [MainThread]: [32mCompleted successfully[0m
+22:24:34.559938 [info ] [MainThread]: 
+22:24:34.563449 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+22:24:34.567831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630be0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630be08e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5630be0f70>]}
+
+
+============================== 2024-07-15 22:27:29.975009 | a25e7373-ab67-4ab0-9c44-dbdbe8a68402 ==============================
+22:27:29.975009 [info ] [MainThread]: Running with dbt=1.0.0
+22:27:29.976439 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, config_dir=False, defer=None, state=None, cls=<class 'dbt.task.debug.DebugTask'>, which='debug', rpc_method=None)
+22:27:29.978512 [debug] [MainThread]: Tracking: tracking
+22:27:29.984435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744db8f7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744db8f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744db8f820>]}
+22:27:30.175352 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:27:30.177668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a25e7373-ab67-4ab0-9c44-dbdbe8a68402', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744d324eb0>]}
+22:27:30.180590 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+22:27:30.182595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a25e7373-ab67-4ab0-9c44-dbdbe8a68402', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744d324880>]}
+22:27:30.233784 [debug] [MainThread]: Executing "git --help"
+22:27:30.243902 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+22:27:30.246237 [debug] [MainThread]: STDERR: "b''"
+22:27:30.259488 [debug] [MainThread]: Acquiring new postgres connection "debug"
+22:27:30.262069 [debug] [MainThread]: Using postgres connection "debug"
+22:27:30.263966 [debug] [MainThread]: On debug: select 1 as id
+22:27:30.265640 [debug] [MainThread]: Opening a new connection, currently in state init
+22:27:30.282663 [debug] [MainThread]: SQL status: SELECT 1 in 0.02 seconds
+22:27:30.286663 [debug] [MainThread]: On debug: Close
+22:27:30.289076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744d32aa90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744d32a520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f744d32a5b0>]}
+22:27:30.758949 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2024-07-15 22:27:38.559076 | efb280d4-d515-493f-b94b-6a8c704edd79 ==============================
+22:27:38.559076 [info ] [MainThread]: Running with dbt=1.0.0
+22:27:38.561204 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/app/dbt_project', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, threads=None, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+22:27:38.566146 [debug] [MainThread]: Tracking: tracking
+22:27:38.574341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b4940fb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b4940f8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b4940fd60>]}
+22:27:38.717434 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+22:27:38.719102 [debug] [MainThread]: Partial parsing: added file: dbt_project://macros/generate_schema_name.sql
+22:27:38.720302 [debug] [MainThread]: Parsing macros/generate_schema_name.sql
+22:27:38.725052 [info ] [MainThread]: Change detected to override macro used during parsing. Starting full parse.
+22:27:38.726749 [debug] [MainThread]: Parsing macros/generate_schema_name.sql
+22:27:38.731001 [debug] [MainThread]: Parsing macros/catalog.sql
+22:27:38.738749 [debug] [MainThread]: Parsing macros/adapters.sql
+22:27:38.794575 [debug] [MainThread]: Parsing macros/relations.sql
+22:27:38.798941 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+22:27:38.803773 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+22:27:38.825699 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+22:27:38.849185 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+22:27:38.856871 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+22:27:38.865495 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+22:27:38.885373 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+22:27:38.891932 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+22:27:38.904388 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+22:27:38.927598 [debug] [MainThread]: Parsing macros/etc/statement.sql
+22:27:38.940155 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+22:27:38.947175 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+22:27:38.951918 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+22:27:38.957475 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+22:27:38.964081 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+22:27:38.975120 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+22:27:38.994964 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+22:27:39.004684 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+22:27:39.012721 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+22:27:39.018567 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+22:27:39.049176 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+22:27:39.063697 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+22:27:39.125670 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+22:27:39.134441 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+22:27:39.226435 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+22:27:39.276003 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+22:27:39.300413 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+22:27:39.411931 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+22:27:39.435900 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+22:27:39.443730 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+22:27:39.449773 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+22:27:39.464047 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+22:27:39.491433 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+22:27:39.515843 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+22:27:39.554679 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+22:27:39.559930 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+22:27:39.563365 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+22:27:39.567459 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+22:27:39.570070 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+22:27:39.573058 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+22:27:40.165686 [debug] [MainThread]: 1699: static parser successfully parsed customers_orders.sql
+22:27:40.281962 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.commerce.customers_orders
+
+22:27:40.315723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efb280d4-d515-493f-b94b-6a8c704edd79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b487550d0>]}
+22:27:40.361796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efb280d4-d515-493f-b94b-6a8c704edd79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b494140d0>]}
+22:27:40.365147 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 166 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+22:27:40.379471 [info ] [MainThread]: 
+22:27:40.383411 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:27:40.389755 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database"
+22:27:40.414669 [debug] [ThreadPool]: Using postgres connection "list_dbt_database"
+22:27:40.416231 [debug] [ThreadPool]: On list_dbt_database: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "list_dbt_database"} */
+
+    select distinct nspname from pg_namespace
+  
+22:27:40.417844 [debug] [ThreadPool]: Opening a new connection, currently in state init
+22:27:40.425663 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.01 seconds
+22:27:40.428821 [debug] [ThreadPool]: On list_dbt_database: Close
+22:27:40.431511 [debug] [ThreadPool]: Acquiring new postgres connection "list_dbt_database_refined"
+22:27:40.444190 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_refined"
+22:27:40.445515 [debug] [ThreadPool]: On list_dbt_database_refined: BEGIN
+22:27:40.446581 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+22:27:40.451510 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+22:27:40.452828 [debug] [ThreadPool]: Using postgres connection "list_dbt_database_refined"
+22:27:40.453966 [debug] [ThreadPool]: On list_dbt_database_refined: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "list_dbt_database_refined"} */
+select
+      'dbt_database' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'refined'
+    union all
+    select
+      'dbt_database' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'refined'
+  
+22:27:40.457865 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+22:27:40.461459 [debug] [ThreadPool]: On list_dbt_database_refined: ROLLBACK
+22:27:40.463073 [debug] [ThreadPool]: On list_dbt_database_refined: Close
+22:27:40.470952 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.472432 [debug] [MainThread]: On master: BEGIN
+22:27:40.473556 [debug] [MainThread]: Opening a new connection, currently in state init
+22:27:40.478587 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+22:27:40.479927 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.480917 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+22:27:40.487046 [debug] [MainThread]: SQL status: SELECT 0 in 0.01 seconds
+22:27:40.489737 [debug] [MainThread]: On master: ROLLBACK
+22:27:40.491049 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.492046 [debug] [MainThread]: On master: BEGIN
+22:27:40.493388 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+22:27:40.494519 [debug] [MainThread]: On master: COMMIT
+22:27:40.495504 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.496601 [debug] [MainThread]: On master: COMMIT
+22:27:40.498092 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:27:40.499352 [debug] [MainThread]: On master: Close
+22:27:40.501115 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+22:27:40.502671 [info ] [MainThread]: 
+22:27:40.510612 [debug] [Thread-1  ]: Began running node model.dbt_project.customers_orders
+22:27:40.511880 [info ] [Thread-1  ]: 1 of 1 START view model refined.customers_orders................................ [RUN]
+22:27:40.513640 [debug] [Thread-1  ]: Acquiring new postgres connection "model.dbt_project.customers_orders"
+22:27:40.515360 [debug] [Thread-1  ]: Began compiling node model.dbt_project.customers_orders
+22:27:40.516745 [debug] [Thread-1  ]: Compiling model.dbt_project.customers_orders
+22:27:40.521884 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_project.customers_orders"
+22:27:40.531190 [debug] [Thread-1  ]: finished collecting timing info
+22:27:40.532539 [debug] [Thread-1  ]: Began executing node model.dbt_project.customers_orders
+22:27:40.579698 [debug] [Thread-1  ]: Writing runtime SQL for node "model.dbt_project.customers_orders"
+22:27:40.588137 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:27:40.589290 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: BEGIN
+22:27:40.590274 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+22:27:40.595054 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+22:27:40.596394 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:27:40.597532 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+
+  create view "dbt_database"."refined"."customers_orders__dbt_tmp" as (
+    with view_orders_cust as  (
+
+select ord.id,cus.first_name,ord.status
+from raw.orders as ord
+left join raw.customers as cus on ord.user_id = cus.id
+
+)
+select * from view_orders_cust
+  );
+22:27:40.600629 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.0 seconds
+22:27:40.622884 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:27:40.625777 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+alter table "dbt_database"."refined"."customers_orders__dbt_tmp" rename to "customers_orders"
+22:27:40.629003 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+22:27:40.654175 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:27:40.656650 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:27:40.659011 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: COMMIT
+22:27:40.663322 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+22:27:40.680781 [debug] [Thread-1  ]: Using postgres connection "model.dbt_project.customers_orders"
+22:27:40.683027 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: /* {"app": "dbt", "dbt_version": "1.0.0", "profile_name": "commerce", "target_name": "dev", "node_id": "model.dbt_project.customers_orders"} */
+drop view if exists "dbt_database"."refined"."customers_orders__dbt_backup" cascade
+22:27:40.685906 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.0 seconds
+22:27:40.690796 [debug] [Thread-1  ]: finished collecting timing info
+22:27:40.693095 [debug] [Thread-1  ]: On model.dbt_project.customers_orders: Close
+22:27:40.696304 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efb280d4-d515-493f-b94b-6a8c704edd79', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b48b71dc0>]}
+22:27:40.699796 [info ] [Thread-1  ]: 1 of 1 OK created view model refined.customers_orders........................... [[32mCREATE VIEW[0m in 0.18s]
+22:27:40.702981 [debug] [Thread-1  ]: Finished running node model.dbt_project.customers_orders
+22:27:40.711994 [debug] [MainThread]: Acquiring new postgres connection "master"
+22:27:40.714906 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.718185 [debug] [MainThread]: On master: BEGIN
+22:27:40.720814 [debug] [MainThread]: Opening a new connection, currently in state closed
+22:27:40.734730 [debug] [MainThread]: SQL status: BEGIN in 0.01 seconds
+22:27:40.737564 [debug] [MainThread]: On master: COMMIT
+22:27:40.739840 [debug] [MainThread]: Using postgres connection "master"
+22:27:40.741949 [debug] [MainThread]: On master: COMMIT
+22:27:40.744508 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+22:27:40.746973 [debug] [MainThread]: On master: Close
+22:27:40.750044 [info ] [MainThread]: 
+22:27:40.753668 [info ] [MainThread]: Finished running 1 view model in 0.37s.
+22:27:40.757758 [debug] [MainThread]: Connection 'master' was properly closed.
+22:27:40.762368 [debug] [MainThread]: Connection 'model.dbt_project.customers_orders' was properly closed.
+22:27:40.810359 [info ] [MainThread]: 
+22:27:40.816447 [info ] [MainThread]: [32mCompleted successfully[0m
+22:27:40.822804 [info ] [MainThread]: 
+22:27:40.831566 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+22:27:40.838357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b487a60a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b487b01c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b4879d5e0>]}
