@@ -1,4 +1,4 @@
-jaffle_shop:
+commerce:
   target: dev
   outputs:
     dev:
@@ -8,5 +8,5 @@ jaffle_shop:
       user: dbt_user
       password: dbt_password
       database: dbt_database
-      schema: public
+      schema: marts
       threads: 1

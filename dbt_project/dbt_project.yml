@@ -1,8 +1,8 @@
-name: 'dbt_project'
+name: 'commerce'
 version: '1.0.0'
 config-version: 2
 
-profile: 'jaffle_shop'
+profile: 'commerce'
 
 # Chemins vers différents types de fichiers
 source-paths: ["models"]  # Chemin des modèles dbt
@@ -21,6 +21,10 @@ clean-targets:
 
 # Configuration des modèles dbt
 models:
-  your_model_name:
-    +materialized: view  # Type de matérialisation des modèles (view, table, etc.)
+  commerce:
+    staging:
+      schema: staging
+      +materialized: view     
+    marts:
+      +materialized: table  
 
