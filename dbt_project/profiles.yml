@@ -8,5 +8,5 @@ commerce:
       user: dbt_user
       password: dbt_password
       database: dbt_database
-      schema: refined
+      schema: marts
       threads: 1

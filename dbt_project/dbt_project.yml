@@ -1,4 +1,4 @@
-name: 'dbt_project'
+name: 'commerce'
 version: '1.0.0'
 config-version: 2
 
@@ -22,5 +22,9 @@ clean-targets:
 # Configuration des modèles dbt
 models:
   commerce:
-    customers_orders:
-      schema: trusted
+    staging:
+      schema: staging
+      +materialized: view     
+    marts:
+      +materialized: table  
+
