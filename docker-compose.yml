@@ -7,6 +7,8 @@ services:
       - .:/app
     depends_on:
       - postgres
+    ports:
+      - "8080:8080"
     environment:
       - DBT_PROFILES_DIR=/app/dbt_project
       - DBT_PROJECT_DIR=/app/dbt_project
