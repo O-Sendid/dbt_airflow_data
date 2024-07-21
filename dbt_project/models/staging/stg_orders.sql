@@ -4,4 +4,4 @@ SELECT
     order_date,
     status
 FROM
-    raw.orders
+{{ source ('raw', 'ordr') }}

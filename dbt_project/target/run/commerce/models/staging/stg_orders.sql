@@ -6,5 +6,5 @@
     order_date,
     status
 FROM
-    raw.orders
+"dbt_database"."raw"."orders"
   );
