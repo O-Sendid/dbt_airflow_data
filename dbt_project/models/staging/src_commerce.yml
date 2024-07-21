@@ -3,11 +3,26 @@ version: 2
 sources:
   - name: raw
     database: dbt_database
+    description: DBT -  Postgres application database.
     schema: raw
     tables:
       - name: cust
         identifier: customers
+        description: Raw customers data.
+        columns:
+          - name: id
+            description: Primary key for customers.
+            tests:
+              - unique
+              - not_null
       - name: ordr
+        description: Raw orders data.
+        columns:
+          - name: id
+            description: Primary key for orders.
+            tests:
+              - unique
+              - not_null
         identifier: orders
       - name: pay
         identifier: payments
